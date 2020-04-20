@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 75%;
+    margin: 50px auto;
+}
+.slides {
+    height: 75vh;
+    position: relative;
+    overflow: hidden;
+}
+.slider {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    transition: transform 1s;
+}
+.slide {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 350px;
+    color: white;
+}
+.slide-1 {background-color: royalblue;}
+.slide-2 {background-color: sandybrown;}
+.slide-3 {background-color: rgb(255, 116, 116);}
+.slide-4 {background-color: rgb(239, 116, 255);}
+.controls .arrow {
+    position: absolute;
+    top: 42%;
+    font-size: 25px;
+    color: white;
+    border:  1px solid white;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 3px 13px;
+    border-radius: 100%;
+}
+.controls .left {
+    left: 10px;
+}
+.controls .right {
+    right: 10px;
+}
+.controls ul {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.controls li {
+    width: 20px;
+    height: 3px;
+    list-style: none;
+    margin: 4px;
+    border: 1px solid rgb(255, 255, 227)
+}
+.controls .slide-1 {background-color: royalblue;}
+.controls .slide-2 {background-color: sandybrown;}
+.controls .slide-3 {background-color: rgb(255, 116, 116);}
+.controls .slide-4 {background-color: rgb(239, 116, 255);}
+.controls .active {
+    background-color: rgba(255, 255, 255, 0.4)
+}
